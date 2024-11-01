@@ -1,0 +1,62 @@
+@import './grids.scss';
+
+.vistrom-media-categories ul {
+    margin: 5px 0 0 20px;
+}
+
+.media-modal-content .media-toolbar-secondary {
+    display: flex;
+    align-items: center;
+}
+
+.vistrom-media-category-filter {
+    margin-top: 32px;
+    margin-right: 2%;
+    width: calc(48% - 12px);
+}
+
+.vistrom-media-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vistrom-media-modal {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.4);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vistrom-media-modal-content {
+    background: #fff;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    overflow-y: auto;
+    max-height: 100%;
+
+    @media screen and (min-width: 769px) {
+        width: 50%;
+    }
+}
+
+.vistrom-media-bulk-edit,
+.vistrom-media-modal {
+    .cat-checklist .children {
+        margin-left: 18px;
+    }
+
+    .vistrom-media-modal-close {
+        all: unset;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}

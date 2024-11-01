@@ -1,0 +1,14 @@
+{
+    "name": "vistrom-media-library-categories",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+    "start": "wp-scripts start src/index.js",
+    "build": "wp-scripts build src/index.js"
+    },
+    "author": "",
+    "license": "GPLv2",
+    "devDependencies": {
+        "@wordpress/scripts": "^13.0.3"
+    }
+}
